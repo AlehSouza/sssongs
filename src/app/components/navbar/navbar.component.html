@@ -1,0 +1,15 @@
+<div class="content">
+    <div class="options">
+        @for (option of options; track option) {
+            @if(option.label === 'Home') {
+                <button class="btn-primary-icon">
+                    <mat-icon aria-hidden="false" aria-label="SSSongs Icon" fontIcon="gesture"></mat-icon>
+                </button>    
+            } @else {
+                <button class="btn-primary">
+                    {{option.label}}
+                </button>
+            }
+        }
+    </div>
+</div>
